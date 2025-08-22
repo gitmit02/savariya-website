@@ -163,14 +163,14 @@ Update contact details in:
 ## 📞 Contact Information
 
 **Savariya Premium Groom Wear**
-- 📍 123 Savariya Street, Mumbai, India
-- 📞 +91 98765 43210
-- ✉️ info@savariya.com
+- 📍  5/38, Ajmal Khan Rd, Block 5, WEA, Karol Bagh, Delhi-110005, India
+- 📞 +91 8700293206
+- ✉️ savariyagroomselection@gmail.com
 - 🌐 www.savariya.com
 
 ## 📄 License
 
-This project is created for Savariya Premium Groom Wear. All rights reserved.
+This project is created for Savariya Groom Selection. All rights reserved.
 
 ---
 
