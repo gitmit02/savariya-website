@@ -1,6 +1,6 @@
-# Savariya - Premium Groom Wear Website
+# Savariya - Groom Wear Website
 
-A beautiful, responsive React+vite website for Savariya, a premium groom wear boutique specializing in traditional Indian menswear including sherwanis, kurtas, and Coats suits.
+A beautiful, responsive React+vite website for Savariya, a groom wear shop specializing in traditional Indian menswear including sherwanis, kurtas, and Coats suits.
 
 ## 🌟 Features
 
