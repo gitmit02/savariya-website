@@ -12,10 +12,41 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time
-    setTimeout(() => {
+    const images = document.querySelectorAll("img");
+    let loadedCount = 0;
+
+    const checkDone = () => {
+      loadedCount++;
+      if (loadedCount === images.length) {
+        setLoading(false);
+      }
+    };
+
+    if (images.length === 0) {
+      // No images found → stop loading immediately
       setLoading(false);
-    }, 2000); // 2 seconds loading time
+    } else {
+      images.forEach((img) => {
+        if (img.complete) {
+          loadedCount++;
+        } else {
+          img.addEventListener("load", checkDone);
+          img.addEventListener("error", checkDone);
+        }
+      });
+
+      if (loadedCount === images.length) {
+        setLoading(false);
+      }
+    }
+
+    // Cleanup
+    return () => {
+      images.forEach((img) => {
+        img.removeEventListener("load", checkDone);
+        img.removeEventListener("error", checkDone);
+      });
+    };
   }, []);
 
   return (
